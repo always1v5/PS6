@@ -49,8 +49,31 @@ public class Person_Test {
 		person1.setStreet("702 Stone Gate Blvd");
 		person1.setPostalCode(21921);
 		
+		
+		
+		@Test
+		public void add(){
+			PersonDAL.addPerson(person1)
+		}
 	}
-	
-	
 
+	private static void add() {
+		// TODO Auto-generated method stub
+		
+	}
+		@Test
+		public void Get(){
+			
+			PersonDAL.getPerson(person1UUID);
+		
+		}
+		@Test
+		public void Update(){
+			PersonDAL.updatePerson(person1);
+			
+}
+		@Test 
+		public void Dele(){
+			PersonDAL.deletePerson(person1UUID);
+		}
 }
